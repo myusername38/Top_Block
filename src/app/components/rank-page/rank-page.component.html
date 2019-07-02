@@ -1,0 +1,25 @@
+<div class = "rank-outer">
+  <div class = "rank-perks">
+    <div class = "picture">
+      <img class = "picture-size" src= "{{rank?.picture}}">
+      <h1>{{rank?.name}}</h1> 
+    </div>
+    <div class = "kit">
+        <img src = "{{rank?.kit_picture}}">
+    </div>
+    <div class = "permissions">
+        <h2>Abilities</h2>
+      <ul>
+        <li *ngFor = "let ability of rank?.abilities">
+          <p>{{ability}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class = "buttons">
+      <button (click) = "backButtonClicked()">Go back</button>
+    </div>
+</div>
+
+
+

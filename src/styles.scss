@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    padding:0px; 
+	margin:0px;
+ /*have to make the entire pane 100% on hieght for % hieght to work*/
+	background-image: url("./assets/Pictures/background.png"); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	 background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+

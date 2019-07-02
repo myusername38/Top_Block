@@ -1,0 +1,10 @@
+<div>
+  <ul>
+    <li routerLink = "/" [ngClass]="{ 'active': activePage === 'Home' }">Home</li>
+    <li routerLink = "/ranks" [ngClass]="{ 'active': activePage === 'Ranks' }">Ranks</li>
+    <li routerLink = "/crates" [ngClass]="{ 'active': activePage === 'Crates' }">Crates</li>
+    <li routerLink = "/discord" [ngClass]="{ 'active': activePage === 'Discord' }" >Discord</li>
+    <li [style.border-bottom]="activePage == 'Voting Links' ? '3px solid white' : '3px solid rgba(0, 0, 0, 0)'">Voting Links</li>
+    <li routerLink = "/leaderboards" [ngClass]="{ 'active': activePage === 'LeaderBoards' }">Leader Boards</li>
+  </ul>
+</div>
