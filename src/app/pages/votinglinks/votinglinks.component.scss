@@ -1,0 +1,72 @@
+.votingLinks{
+	margin: auto; 
+	margin-top: 10px; 
+	border-radius: 10px; 
+    border: 4px solid black;
+	background:rgba(0,0,0,0.5);
+	display:flex;
+	display: -webkit-flex;  /* safari */ 
+	-webkit-flex-direction: column; /* safari 6.1+ */ 
+	flex-direction: column;
+	justify-content: close; 
+	height: auto;
+	width: 800px; 
+	padding-bottom: 10px; 
+}
+.addressBox{
+	background:rgba(0,0,0,.5);
+	margin: auto; 
+	margin-top: 3px; 
+	margin-bottom: 3px; 
+	border-radius: 10px; 
+	border: 4px solid black; 
+	width: 500px; 
+	height: 100px; 
+	padding-bottom: 7px; 
+	display:flex;
+	display: -webkit-flex;  /* safari */ 
+	-webkit-flex-direction: row; /* safari 6.1+ */ 
+	flex-direction: row;
+}
+.addressBox:hover{
+	transform: scale(1.1, 1.1); 
+	background:rgba(255,255,255,0.7);
+}
+.logoPicture{
+	margin: auto; 
+	margin-top: 10px; 
+	margin-bottom: 3px; 
+	height: 100px; 
+}
+.mineVotes{
+	margin: auto; 
+	margin-left: 65px; 
+	margin-top: 5px; 
+}
+.trackyLogo{
+	margin: auto; 
+	margin-left: 20px; 
+	margin-top: 20px; 
+}
+.TrackyServerLogo{
+	margin: auto; 
+	font-family: calibri; 
+	font-size: 50px; 
+	color: orange; 
+	font-weight: bold; 
+}
+.block{
+	height: 60px; 
+	margin: auto; 
+	margin-left: 20px; 
+	margin-top: 20px; 
+	
+}
+.OgLogo{
+	margin: auto; 
+	margin-left: -20px; 
+	font-family: calibri; 
+	font-size: 50px; 
+	color: rgba(62,180,27, .9); 
+	font-weight: bold; 
+}

@@ -14,6 +14,9 @@ import { RankTileComponent } from './components/rank-tile/rank-tile.component';
 import { RankPageComponent } from './components/rank-page/rank-page.component';
 import { DiscordComponent } from './pages/discord/discord.component';
 import { LeaderboardsComponent } from './pages/leaderboards/leaderboards.component';
+import { VotinglinksComponent } from './pages/votinglinks/votinglinks.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -29,13 +32,15 @@ import { LeaderboardsComponent } from './pages/leaderboards/leaderboards.compone
     RankPageComponent,
     DiscordComponent,
     LeaderboardsComponent,
+    VotinglinksComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
-
+    BrowserAnimationsModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
