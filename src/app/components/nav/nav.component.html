@@ -1,9 +1,21 @@
-<div>
-  <ul>
-    <li routerLink = "/" [ngClass]="{ 'active': activePage === 'Home' }">Home</li>
-    <li routerLink = "/ranks" [ngClass]="{ 'active': activePage === 'Ranks' }">Ranks</li>
-    <li routerLink = "/discord" [ngClass]="{ 'active': activePage === 'Discord' }" >Discord</li>
-    <li routerLink = "/votinglinks" [ngClass]="{ 'active': activePage === 'VotingLinks' }">Voting Links</li>
-    <li routerLink = "/leaderboards" [ngClass]="{ 'active': activePage === 'LeaderBoards' }">Leader Boards</li>
-  </ul>
+<div class="outter">
+  <div class="links">
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <button mat-button (click)="setActivePage('Home')" >Home</button>
+      <button mat-button (click)="setActivePage('Ranks')" >Ranks</button>
+      <button mat-button (click)="setActivePage('Discord')" >Discord</button>
+      <button mat-button (click)="setActivePage('VotingLinks')" >Voting Links</button>
+      <button mat-button (click)="setActivePage('LeaderBoards')" >Leader Boards</button>
+    </div>
+  </div>
+  <div class="mobile-links">
+      <button mat-button (click)="showMobileMenu()" >Mobile Menu</button>
+  </div>
+  <div class="mobile-menu w-100" fxLayout="column" *ngIf="mobileMenu">
+      <button mat-button (click)="setActivePage('Home')" >Home</button>
+      <button mat-button (click)="setActivePage('Ranks')" >Ranks</button>
+      <button mat-button (click)="setActivePage('Discord')" >Discord</button>
+      <button mat-button (click)="setActivePage('VotingLinks')" >Voting Links</button>
+      <button mat-button (click)="setActivePage('LeaderBoards')" >Leader Boards</button>
+  </div>
 </div>

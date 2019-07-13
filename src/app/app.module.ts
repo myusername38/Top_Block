@@ -17,6 +17,7 @@ import { LeaderboardsComponent } from './pages/leaderboards/leaderboards.compone
 import { VotinglinksComponent } from './pages/votinglinks/votinglinks.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatToolbarModule, MatSidenavModule, MatListModule, MatButtonModule, MatIconModule } from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -41,6 +42,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HttpClientModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

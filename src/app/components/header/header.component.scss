@@ -1,19 +1,36 @@
-div{
-   margin: 0px; 
-   margin-top: 15px; 
-   display: flex; 
-   align-items: center; 
-   justify-content: center; 
-   height: 150px; 
-   margin-bottom: 20px; 
+@import'../../../vars.scss';
 
-   img{ 
-     width: 1000px; 
-     box-shadow: 0 0 8px 8px #8b7aa7; 
-     border-radius: 5px; 
-     border-color: #8b7aa7; 
-     border: 3px; 
-   }
+#large_picture{
+  @media screen and (max-width: $screen-small){
+    visibility: hidden;
+    margin-bottom: -150px;
+  }
 
-  // border-bottom: 2px solid black; 
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 0 0 8px 8px #8b7aa7;
+    border-radius: 5px;
+    border-color: #8b7aa7;
+    border: 3px;
+    @media screen and (max-width: 1000px) {
+      object-fit: cover;
+      width: 100%;
+      min-height: 150px;
+    }
+}
+#small_picture{
+  @media screen and (min-width: $screen-small){
+    visibility: hidden;
+    object-fit: none;
+    height: 1px;
+    margin: 0px;
+    padding: 0px;
+  }
+  width: 100%;
+  margin-top: -10px;
+  object-fit: contain;
+  box-shadow: 0 0 8px 8px #8b7aa7;
+  border-radius: 5px;
+  border-color: #8b7aa7;
+  border: 3px;
 }

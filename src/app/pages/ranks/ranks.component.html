@@ -1,6 +1,3 @@
-<app-header></app-header>
-<app-nav
-  [activePage] = "'Ranks'"></app-nav>
 <div *ngIf = "!rankSelected" class = rankContainer >
   <app-rank-tile *ngFor = "let rank of ranks"
     [rank] = "rank" (rankEmitter) = "showRank($event)">

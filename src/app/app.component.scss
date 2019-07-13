@@ -1,13 +1,5 @@
-body{
-    margin: 0px;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    .page_contents{
-        display: flex; 
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
+
+    .page-contents{
+
+        max-width: 1000px;
     }
-}
