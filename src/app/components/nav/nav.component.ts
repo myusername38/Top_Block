@@ -53,7 +53,11 @@ export class NavComponent implements OnInit {
         this.router.navigate(['/']);
     }
   }
-  showMobileMenu(){
-    this.mobileMenu = true;
+  toggleMobileMenu(){
+    if(!this.mobileMenu){
+      this.mobileMenu = true;
+      return;
+    }
+    this.mobileMenu = null;
   }
 }

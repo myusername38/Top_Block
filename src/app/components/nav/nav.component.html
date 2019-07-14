@@ -9,13 +9,15 @@
     </div>
   </div>
   <div class="mobile-links">
-      <button mat-button (click)="showMobileMenu()" >Mobile Menu</button>
+      <button mat-button (click)="toggleMobileMenu()"><mat-icon >menu</mat-icon></button>
   </div>
-  <div class="mobile-menu w-100" fxLayout="column" *ngIf="mobileMenu">
-      <button mat-button (click)="setActivePage('Home')" >Home</button>
-      <button mat-button (click)="setActivePage('Ranks')" >Ranks</button>
-      <button mat-button (click)="setActivePage('Discord')" >Discord</button>
-      <button mat-button (click)="setActivePage('VotingLinks')" >Voting Links</button>
-      <button mat-button (click)="setActivePage('LeaderBoards')" >Leader Boards</button>
+  <div class="mobile-menu w-100 fade-in-fast" fxLayout="column" *ngIf="mobileMenu">
+    <button class="m-xs" mat-button (click)="setActivePage('Home')" >Home</button>
+    <button class="m-xs" mat-button (click)="setActivePage('Ranks')" >Ranks</button>
+    <button class="m-xs" mat-button (click)="setActivePage('Discord')" >Discord</button>
+    <button class="m-xs" mat-button (click)="setActivePage('VotingLinks')" >Voting Links</button>
+    <button class="m-xs" mat-button (click)="setActivePage('LeaderBoards')" >Leader Boards</button>
+    <button class="m-xs" mat-button (click)="setActivePage('LeaderBoards')" >Leader Boards</button>
+    <button class="m-xs" mat-button (click)="toggleMobileMenu()">Close</button>
   </div>
 </div>

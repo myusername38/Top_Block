@@ -1,4 +1,6 @@
-<div class="inner" (click)="rankClicked()">
-    <img src = "{{picture}}" class = "pictureSize"/>
-    <h1>{{ name }}</h1>
-</div>
+<button class="p-0 m-0" mat-button (click)="rankClicked()">
+  <div class="rank-tile m-xs p-xs" fxLayout="column" fxLayoutAlign="center center" [style.color]="getColor(name)">
+      <img src = "{{ picture }}" class="rank-picture"/>
+      <h1>{{ name }}</h1>
+  </div>
+</button>

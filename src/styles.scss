@@ -22,7 +22,7 @@ body{
 }
 
 /* CUSTOM CLASSES  */
-.mlr-auto{ margin-left: auto !important; margin-right: auto !important; }
+.mlr-auto { margin-left: auto !important; margin-right: auto !important; }
 .m-0 { margin: 0; }
 .m-xs { margin: $spacing-xs !important; }
 .m-sm { margin: $spacing-sm !important; }
@@ -104,7 +104,20 @@ body{
 .fw-500 { font-weight: 500 !important; }
 .fw-700 { font-weight: 700 !important; }
 
-.fade-in {
+.rank-picture{
+	height: 300px;
+	width: 188px;
+	border: $spacing-xs / 4 solid black;
+	border-radius: 10px;
+}
+.fade-in-fast {
+  -webkit-animation: fadein .2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein .2s; /* Firefox < 16 */
+  -ms-animation: fadein .2s; /* Internet Explorer */
+  -o-animation: fadein .2s; /* Opera < 12.1 */
+  animation: fadein .2s;
+}
+.fade-in-slow {
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1s; /* Firefox < 16 */
   -ms-animation: fadein 1s; /* Internet Explorer */

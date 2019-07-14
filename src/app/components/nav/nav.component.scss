@@ -3,19 +3,32 @@
 .menu-spacer {
   flex: 1 1 auto;
 }
-.top-nav{
-  background-color: rgba(50, 50, 50, .5);
-  border-radius: $spacing-xs;
-  border: $spacing-xs/4 solid black;
-}
 .mobile-links{
   display: none;
+  background-color: rgba(0,0,0, .5);
+  border: ($spacing-xs / 4) solid black;
+}
+.mobile-menu{
+  position: absolute;
+  height: auto;
+  background-color: #8b7aa7;
+  z-index: 99;
+  border-style: 3px solid black;
+  button{
+    height: $spacing-lg;
+    font-family: Aero, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+  }
 }
 .links{
   display: block;
-}
-.mobile-menu{
-  display: none !important;
+  background-color: rgba(0,0,0, .5);
+  border: ($spacing-xs / 4) solid black;
+  border-radius: $spacing-xs;
+  @media screen and (max-width: $component-max-width){
+    border-radius: 0px;
+  }
 }
 @media screen and (max-width: $screen-small){
   .links{
@@ -25,20 +38,20 @@
     display: block;
   }
   .mobile-menu{
-    display: block !important;
+    visibility: visible;
   }
 }
-.mobile-menu{
-  position: absolute;
-  height: calc(100vh - 150px);
-  background-color: #cfc;
-  border-color: #696;
-  opacity: 0.7;
-  z-index: 99;
-  button{
-    height: $spacing-lg;
+@media screen and (min-width: $screen-small){
+  .mobile-menu{
+    visibility: hidden;
   }
 }
 .outter{
   position: relative;
+}
+button{
+  font-family: Aero, Arial, Helvetica, sans-serif;
+  font-size: $font-md;
+  color: white;
+  height: $button-height;
 }

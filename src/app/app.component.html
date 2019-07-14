@@ -1,7 +1,13 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <div class="w-100 mlr-auto page-contents">
-  <app-header></app-header>
-  <app-nav
-  [activePage]="home"></app-nav>
-  <router-outlet></router-outlet>
+  <div class="page-top m-0 p-0">
+    <app-header></app-header>
+  </div>
+    <app-nav
+    [activePage]="home"></app-nav>
+  <div class="p-sm">
+    <router-outlet></router-outlet>
+  </div>
 </div>
 

@@ -1,8 +1,8 @@
 [
     {
         "name" : "Pawn",
-        "price" : "4", 
-        "picture" : "http://topblockmc.net/Pictures/Ranks/Pawn.JPG", 
+        "price" : "4",
+        "picture" : "http://topblockmc.net/Pictures/Ranks/Pawn.JPG",
         "kit_picture" : "http://topblockmc.net/Pictures/Kits/Pawn.png",
         "abilities" :[
             "/kit Pawn", "/craft[/c]", "/enderchest[/ec]", "/ignore", "/hat", "/nick", "/ptime", "/2 Homes [/homes]", "3 Items on AuctionHouse [/ah]",
@@ -10,28 +10,28 @@
         ]
     },
     {
-        "name" : "Kight",
-        "price" : "15", 
-        "picture" : "http://topblockmc.net/Pictures/Ranks/Knight.jpeg", 
+        "name" : "Knight",
+        "price" : "15",
+        "picture" : "http://topblockmc.net/Pictures/Ranks/Knight.jpeg",
         "kit_picture" : "http://topblockmc.net/Pictures/Kits/Knight.png",
         "abilities" :[
-            "All Pawn Commands","[Knight] In-Game Prefix", "/kit Kight", "/feed", "/back", "/rename", "4 Homes [/homes]", "6 Items on AuctionHouse [/ah]", "3 Private Vault[/pv]",
+            "All Pawn Commands","[Knight] In-Game Prefix", "/kit Knight", "/feed", "/back", "/rename", "4 Homes [/homes]", "6 Items on AuctionHouse [/ah]", "3 Private Vault[/pv]",
             "6 Items on AuctionHouse [/ah]", "3 Private Vaults"
         ]
     },
     {
         "name" : "Rook",
         "price" : "30",
-        "picture" : "http://topblockmc.net/Pictures/Ranks/Rook.JPG", 
+        "picture" : "http://topblockmc.net/Pictures/Ranks/Rook.JPG",
         "kit_picture" : "http://topblockmc.net/Pictures/Kits/Rook.png",
         "abilities" :[
-            "All Kight Commands","[Rook] In-Game Prefix",  "/kit Rook", "/heal", "/shout", "/fly", "Colorful Signs", "6 Homes [/homes]", "5 Private Vault[/pv]"
+            "All Knight Commands","[Rook] In-Game Prefix",  "/kit Rook", "/heal", "/shout", "/fly", "Colorful Signs", "6 Homes [/homes]", "5 Private Vault[/pv]"
         ]
     },
     {
         "name" : "Queen",
         "price" : "40",
-        "picture" : "http://topblockmc.net/Pictures/Ranks/Queen.jpeg", 
+        "picture" : "http://topblockmc.net/Pictures/Ranks/Queen.jpeg",
         "kit_picture" : "http://topblockmc.net/Pictures/Kits/Queen.png",
         "abilities" :[
             "All Rook Commands","[Queen] In-Game Prefix",  "/kit Queen", "12 Items on AuctionHouse[/ah]", "7 Private Vault[/pv]"
@@ -40,7 +40,7 @@
     {
         "name" : "King",
         "price" : "60",
-        "picture" : "http://topblockmc.net/Pictures/Ranks/King.jpg", 
+        "picture" : "http://topblockmc.net/Pictures/Ranks/King.jpg",
         "kit_picture" : "http://topblockmc.net/Pictures/Kits/King.png",
         "abilities" :[
             "All Queen Commands","[King] In-Game Prefix",  "/kit King", "10 Homes [/homes]", "15 Items on AuctionHouse[/ah]", "9 Private Vault[/pv]"
