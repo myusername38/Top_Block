@@ -8,7 +8,7 @@
       <button mat-button (click)="setActivePage('LeaderBoards')" >Leader Boards</button>
     </div>
   </div>
-  <div class="mobile-links">
+  <div class="mobile-links" *ngIf="!mobileMenu">
       <button mat-button (click)="toggleMobileMenu()"><mat-icon >menu</mat-icon></button>
   </div>
   <div class="mobile-menu w-100 fade-in-fast" fxLayout="column" *ngIf="mobileMenu">

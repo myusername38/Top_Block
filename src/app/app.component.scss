@@ -1,5 +1,18 @@
+@import '../vars.scss';
 
-    .page-contents{
+.page-contents{
+  max-width: 1000px;
 
-        max-width: 1000px;
-    }
+}
+
+.page-top{
+  @media screen and (max-width: $screen-small){
+    position: fixed;
+    overflow-y:auto;
+    overflow-x:hidden;
+    z-index: 2
+  }
+}
+.pages{
+  z-index: 3;
+}

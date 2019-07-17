@@ -4,15 +4,20 @@
   flex: 1 1 auto;
 }
 .mobile-links{
+  z-index: 3;
+  width: 100%;
+  position: fixed;
   display: none;
   background-color: rgba(0,0,0, .5);
   border: ($spacing-xs / 4) solid black;
 }
 .mobile-menu{
-  position: absolute;
+  position: fixed;
+  overflow-y:auto;
+  overflow-x:hidden;
   height: auto;
   background-color: #8b7aa7;
-  z-index: 99;
+  z-index: 1;
   border-style: 3px solid black;
   button{
     height: $spacing-lg;

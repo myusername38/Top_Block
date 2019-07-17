@@ -1,14 +1,12 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-<div class="w-100 mlr-auto page-contents">
+<div class="w-100 mlr-auto page-contents" fxLayout="column">
   <div class="page-top m-0 p-0">
     <app-header></app-header>
-  </div>
     <app-nav
     [activePage]="home"></app-nav>
-  <div>
-
-    <router-outlet></router-outlet>
   </div>
+  <router-outlet></router-outlet>
+
 </div>
 
