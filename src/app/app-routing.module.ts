@@ -8,14 +8,14 @@ import { VotinglinksComponent } from './pages/votinglinks/votinglinks.component'
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'ranks', component: RanksComponent},
+  {path: 'ranks', component: RanksComponent, runGuardsAndResolvers: 'always'},
   {path: 'discord', component: DiscordComponent},
   {path: 'leaderboards', component: LeaderboardsComponent},
-  {path: 'votinglinks', component: VotinglinksComponent}
+  {path: 'votinglinks', component: VotinglinksComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

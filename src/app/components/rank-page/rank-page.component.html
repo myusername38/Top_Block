@@ -1,24 +1,31 @@
-<div class = "rank-outer">
-  <div class = "rank-perks">
-    <div class="rank-picture">
-      <img class = "picture-size" src= "{{rank?.picture}}">
-      <h1>{{rank?.name}}</h1>
+<div class="rank-outter w-100" fxLayout="column" fxLayoutAlign="center center" >
+  <div class="rank-perks w-100" fxLayout="column" fxLayout.gt-xs="row" fxLayoutAlign="center center" >
+    <div fxHide.lt-md fxFlex="100" fxFlex.gt-sm="33"  fxLayout="column" fxLayoutAlign="center center">
+      <div class="rank-tile p-xs" fxLayout="column" fxLayoutAlign="center center" [style.color]="getColor(rank?.name)">
+        <img class = "rank-picture" src= "{{rank?.picture}}">
+        <h1>{{ rank?.name }}</h1>
+      </div>
     </div>
-    <div class = "kit">
-        <img src = "{{rank?.kit_picture}}">
+    <div fxFlex="50" fxFlex.gt-sm="33"  fxLayout="column" fxLayoutAlign="center center">
+      <div class="kit p-xs" fxLayout="column" fxLayoutAlign="center center" [style.color]="getColor(rank?.name)">
+        <h1 class="m-0 p-0 mb-sm">{{ rank?.name }} Kit</h1>
+        <img class="rank-kit-picture" src = "{{rank?.kit_picture}}">
+      </div>
     </div>
-    <div class = "permissions">
-        <h2>Abilities</h2>
-      <ul>
-        <li *ngFor = "let ability of rank?.abilities">
-          <p>{{ability}}</p>
-        </li>
-      </ul>
+    <div  fxFlex="50" fxFlex.gt-sm="33"  fxLayout="column" fxLayoutAlign="center center">
+      <div class="permissions" fxLayout="column" fxLayoutAlign="center center">
+          <h2 class="mb-0" [style.color]="getColor(rank?.name)" >Abilities</h2>
+        <ul>
+          <li class="m-0" *ngFor = "let ability of rank?.abilities">
+            <p class="m-xs">{{ ability }}</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class = "buttons">
-      <button (click) = "backButtonClicked()">Go back</button>
-    </div>
+    <button mat-button (click) = "backButtonClicked()">Go back</button>
+  </div>
 </div>
 
 

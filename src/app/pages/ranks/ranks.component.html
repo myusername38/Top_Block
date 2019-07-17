@@ -1,4 +1,4 @@
-<div *ngIf = "!rankSelected" class = rankContainer >
+<div *ngIf = "!rankSelected" class="mt-sm" >
   <app-rank-tile *ngFor = "let rank of ranks"
     [rank] = "rank" (rankEmitter) = "showRank($event)">
   </app-rank-tile >

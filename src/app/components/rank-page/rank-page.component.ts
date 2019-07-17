@@ -11,9 +11,9 @@ export class RankPageComponent implements OnInit {
   @Input()
   rank : Rank;
 
-  @Output() 
+  @Output()
   goBack = new EventEmitter();
-  
+
   abilities: String[];
 
   ngOnInit() {
@@ -22,6 +22,21 @@ export class RankPageComponent implements OnInit {
 
   backButtonClicked(){
     this.goBack.emit();
+  }
+
+  getColor(color: string) {
+    switch (color) {
+      case 'Pawn':
+        return '#49c431';
+      case 'Knight':
+        return '#285fd0';
+      case 'Rook':
+        return '#c9e521';
+      case 'Queen':
+        return '#e47ece';
+      case 'King':
+        return '#ec3131';
+    }
   }
 
 }
