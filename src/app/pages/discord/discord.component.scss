@@ -1,16 +1,14 @@
-.discord{
-    height: 120px; 
-    width: 400px; 
-    background-color: rgba(15, 0 , 15, .6);
-    border-radius: 20px; 
-    border-width: 3px; 
-    border-style: solid; 
-    border-color: black;
-    margin-left: auto; 
-    margin-right: auto; 
-    img{
-        margin-top: -11px; 
-        margin-left: 30px; 
-    }
-    
+@import '../../../vars.scss';
+  img{
+    width: 100%;
+    object-fit: contain;
+  }
+
+.discord-button{
+  border: $spacing-xs/4 solid black;
+  &:hover{
+    transform: scale(1.05, 1.05);
+    transition-timing-function: ease;
+    transition: 0.2s;
+  }
 }

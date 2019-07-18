@@ -158,6 +158,16 @@ body {
   padding: 0px;
   margin: 0px;
 }
+.transparent-box{
+  background:rgba(0,0,0,0.7);
+  border: $spacing-xs/4 solid black;
+  border-radius: $spacing-xs;
+}
+.transparent-box-light{
+  background:rgba(0,0,0,0.5);
+  border: $spacing-xs/4 solid black;
+  border-radius: $spacing-xs;
+}
 
 .profile-picture{
   border-radius: 22px;

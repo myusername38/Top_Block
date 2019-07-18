@@ -1,38 +1,29 @@
 @import'../../../vars.scss';
 
-.outerbox{
-  border: 4px solid black;
-  border-radius: 10px;
-  background:rgba(0,0,0,0.5);
-  color : white;
-  .header{
-    text-shadow:
-      -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;
-  }
-  .news_text{
-    border-radius: 10px;
-    border: 4px solid black;
-  }
+img {
+  padding-left: -10px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 50px;
 }
-
+.news-box{
+  color: white;
+}
 .poster{
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-  color: red;
-  font-weight: bold;
-  img {
-    padding-left: -10px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    width: 50px;
-  }
-  @media screen and (min-width: $screen-small){
-    margin-bottom: -$spacing-sm;
-  }
+  margin-bottom: -$spacing-xs;
+}
+.news-text{
+  max-height: 200px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+h2{
+  font-family: $aero-font;
+}
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: $font-sm;
 }

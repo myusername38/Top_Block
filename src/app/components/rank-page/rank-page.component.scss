@@ -35,6 +35,15 @@
     margin-bottom: $spacing-sm;
   }
 }
+.donate-picture{
+  width: 180px;
+  object-fit: contain;
+  &:hover{
+    transform: scale(1.05, 1.05);
+    transition-timing-function: ease;
+    transition: 0.2s;
+  }
+}
 h1{
   font-family: $aero-font;
 }
@@ -49,7 +58,7 @@ li{
   font-size: 16px;
   color: white;
 }
-button{
+.back-button{
   height: 60px;
   font-family: $aero-font;
   font-size: $font-large;
@@ -57,4 +66,9 @@ button{
   background:rgba(0,0,0,0.7);
   border: $spacing-xs/4 solid black;
   border-radius: $spacing-xs;
+  &:hover{
+    transform: scale(1.05, 1.05);
+    transition-timing-function: ease;
+    transition: 0.2s;
+  }
 }
