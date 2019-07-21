@@ -1,72 +1,40 @@
-.votingLinks{
-	margin: auto; 
-	margin-top: 10px; 
-	border-radius: 10px; 
-    border: 4px solid black;
-	background:rgba(0,0,0,0.5);
-	display:flex;
-	display: -webkit-flex;  /* safari */ 
-	-webkit-flex-direction: column; /* safari 6.1+ */ 
-	flex-direction: column;
-	justify-content: close; 
-	height: auto;
-	width: 800px; 
-	padding-bottom: 10px; 
+@import '../../../vars.scss';
+
+.address-box{
+  max-width: 400px;
+  &:hover{
+    transform: scale(1.05, 1.05);
+    transition-timing-function: ease;
+    transition: 0.2s;
+  }
 }
-.addressBox{
-	background:rgba(0,0,0,.5);
-	margin: auto; 
-	margin-top: 3px; 
-	margin-bottom: 3px; 
-	border-radius: 10px; 
-	border: 4px solid black; 
-	width: 500px; 
-	height: 100px; 
-	padding-bottom: 7px; 
-	display:flex;
-	display: -webkit-flex;  /* safari */ 
-	-webkit-flex-direction: row; /* safari 6.1+ */ 
-	flex-direction: row;
+
+h1{
+  font-family: $aero-font;
+  color: white;
 }
-.addressBox:hover{
-	transform: scale(1.1, 1.1); 
-	background:rgba(255,255,255,0.7);
+
+h2{
+  font-family: $aero-font;
 }
-.logoPicture{
-	margin: auto; 
-	margin-top: 10px; 
-	margin-bottom: 3px; 
-	height: 100px; 
+a{
+  text-decoration: none;
 }
-.mineVotes{
-	margin: auto; 
-	margin-left: 65px; 
-	margin-top: 5px; 
+
+#planet-minecraft{
+  h2{
+    color: #49c431;
+  }
 }
-.trackyLogo{
-	margin: auto; 
-	margin-left: 20px; 
-	margin-top: 20px; 
+
+#minecraft-server-list{
+  h2{
+    color: #ec3131;
+  }
 }
-.TrackyServerLogo{
-	margin: auto; 
-	font-family: calibri; 
-	font-size: 50px; 
-	color: orange; 
-	font-weight: bold; 
-}
-.block{
-	height: 60px; 
-	margin: auto; 
-	margin-left: 20px; 
-	margin-top: 20px; 
-	
-}
-.OgLogo{
-	margin: auto; 
-	margin-left: -20px; 
-	font-family: calibri; 
-	font-size: 50px; 
-	color: rgba(62,180,27, .9); 
-	font-weight: bold; 
+
+#minecraft-server{
+  h2{
+    color:#285fd0;
+  }
 }
