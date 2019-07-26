@@ -11,7 +11,7 @@ private post_url = "../../assets/posts.json";
 
 constructor(private http: HttpClient) { }
 
-  getPosts(){
-    return this.http.get<Post[]> (this.post_url); 
+  getPosts() {
+    return this.http.get<Post[]> (this.post_url);
   }
 }
