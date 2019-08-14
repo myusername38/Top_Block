@@ -5,7 +5,7 @@
       <button mat-button (click)="setActivePage('Ranks')" >Ranks</button>
       <button mat-button (click)="setActivePage('Discord')" >Discord</button>
       <button mat-button (click)="setActivePage('VotingLinks')" >Voting Links</button>
-      <a href="https://topblockmc.enjin.com/" rel="noopener noreferrer" target="_blank"><button mat-button>Store</button></a>
+      <a href="http://donation.topblockmc.net/" rel="noopener noreferrer" target="_blank"><button mat-button>Store</button></a>
 
       <!--<button mat-button (click)="setActivePage('LeaderBoards')" >Leader Boards</button>-->
     </div>
@@ -13,12 +13,12 @@
   <div class="mobile-links">
       <button mat-button (click)="toggleMobileMenu()"><mat-icon >menu</mat-icon></button>
   </div>
-  <div class="mobile-menu w-100 fade-in-fast" fxLayout="column" *ngIf="mobileMenu">
+  <div class="mobile-menu w-100 fade-in-fast" fxLayout="column"  *ngIf="mobileMenu">
     <button class="m-xs" mat-button (click)="setActivePage('Home')" >Home</button>
     <button class="m-xs" mat-button (click)="setActivePage('Ranks')" >Ranks</button>
     <button class="m-xs" mat-button (click)="setActivePage('Discord')" >Discord</button>
     <button class="m-xs" mat-button (click)="setActivePage('VotingLinks')" >Voting Links</button>
-    <a href="https://topblockmc.enjin.com/" rel="noopener noreferrer" target="_blank"><button mat-button class="m-xs" >Store</button></a>
+    <a href="http://donation.topblockmc.net/" rel="noopener noreferrer" target="_blank"><button mat-button class="m-xs w-100" >Store</button></a>
     <!--<button class="m-xs" mat-button (click)="setActivePage('LeaderBoards')" >Leader Boards</button>-->
     <button class="m-xs" mat-button (click)="toggleMobileMenu()">Close</button>
   </div>
