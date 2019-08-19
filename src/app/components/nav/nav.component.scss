@@ -5,11 +5,12 @@
 }
 .mobile-links{
   display: none;
-  background-color: rgba(0,0,0, .5);
+  background-color: rgba(10,10,10);
   border: ($spacing-xs / 4) solid black;
 }
 .mobile-menu{
-  position: absolute;
+  position: fixed;
+  height: calc(100vh - 150px) !important;
   height: auto;
   background-color: #8b7aa7;
   z-index: 99;
@@ -47,7 +48,7 @@
   }
 }
 .outter{
-  position: relative;
+  //position: relative;
 }
 button{
   font-family: Aero, Arial, Helvetica, sans-serif;

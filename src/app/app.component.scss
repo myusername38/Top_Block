@@ -1,5 +1,26 @@
+@import '../vars.scss';
 
-    .page-contents{
-
-        max-width: 1000px;
-    }
+.page-contents{
+  max-width: 1000px;
+}
+.page-top{
+  @media screen and (max-width: $screen-small){
+    position: fixed;
+    top: 0;
+    z-index: 99;
+  }
+}
+.main{
+  @media screen and (max-width: $screen-small){
+    padding-top: 210px;
+    z-index: 1;
+  }
+  @media screen and (max-width: 450px){
+    padding-top: 170px;
+    z-index: 1;
+  }
+  @media screen and (max-width: 350px){
+    padding-top: 150px;
+    z-index: 1;
+  }
+}

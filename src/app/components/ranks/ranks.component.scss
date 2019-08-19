@@ -1,24 +1,31 @@
 @import '../../../vars.scss';
 
+.rank-tile{
+  background:rgba(0,0,0,0.5);
+  border: $spacing-xs/4 solid black;
+  border-radius: $spacing-xs;
+  &:hover{
+    transform: scale(1.05, 1.05);
+    background:rgba(0,0,0,0.7);
+    transition-timing-function: ease;
+    transition: 0.2s;
+  }
+}
+h1{
+	font-family: $aero-font;
+  size: 60;
+}
 .rank-outter{
   margin-top: $spacing-sm;
   @media screen and (min-width: $screen-shrink) {
     margin-top: $spacing-lg;
   }
 }
-.rank-tile{
-  background:rgba(0,0,0,0.8);
-  border: $spacing-xs/4 solid black;
-  border-radius: $spacing-xs;
-  font-family: $aero-font;
-  size: 60;
-}
 .kit{
   background:rgba(0,0,0,0.7);
   border: $spacing-xs/4 solid black;
   border-radius: $spacing-xs;
 }
-
 .rank-kit-picture{
   object-fit: contain;
   width: 300px;

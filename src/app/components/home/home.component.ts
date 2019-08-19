@@ -13,9 +13,8 @@ export class HomeComponent implements OnInit {
 
   public players: Player[];
   public posts: Post[];
-  public pageName = "Home";
-  
-  constructor(private _playerLeadersService: PlayerLeadersService, 
+
+  constructor(private _playerLeadersService: PlayerLeadersService,
   private _newsPostsService: NewsPostsService ){ }
 
   ngOnInit() {
@@ -23,6 +22,5 @@ export class HomeComponent implements OnInit {
     .subscribe(data => this.players = data);
   this._newsPostsService.getPosts()
     .subscribe(data => this.posts = data);
-}
-
+  }
 }

@@ -1,9 +1,9 @@
 @import '../../../vars.scss';
-  img{
-    width: 100%;
-    object-fit: contain;
-  }
 
+img{
+  width: 100%;
+  object-fit: contain;
+}
 .discord-button{
   border: $spacing-xs/4 solid black;
   &:hover{

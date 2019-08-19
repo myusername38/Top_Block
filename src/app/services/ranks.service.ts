@@ -10,7 +10,7 @@ export class RanksService {
   private rank_url = "../../assets/ranks.json";
   constructor(private http: HttpClient) { }
 
-  getRanks(){
-    return this.http.get<Rank[]> (this.rank_url); 
+  getRanks() {
+    return this.http.get<Rank[]> (this.rank_url);
   }
 }

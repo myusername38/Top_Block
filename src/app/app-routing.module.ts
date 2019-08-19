@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { RanksComponent } from './pages/ranks/ranks.component';
-import { DiscordComponent } from './pages/discord/discord.component';
 import { LeaderboardsComponent } from './pages/leaderboards/leaderboards.component';
-import { VotinglinksComponent } from './pages/votinglinks/votinglinks.component';
+import { RanksComponent } from './components/ranks/ranks.component';
+import { VotingLinksComponent } from './components/voting-links/voting-links.component';
+import { HomeComponent } from './components/home/home.component';
+import { DiscordComponent } from './components/discord/discord.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'ranks', component: RanksComponent, runGuardsAndResolvers: 'always'},
-  {path: 'discord', component: DiscordComponent},
-  {path: 'leaderboards', component: LeaderboardsComponent},
-  {path: 'votinglinks', component: VotinglinksComponent},
+  { path: '', component: HomeComponent },
+  { path: 'ranks', component: RanksComponent },
+  { path: 'discord', component: DiscordComponent },
+  { path: 'votinglinks', component: VotingLinksComponent },
+  { path: 'leaderboards', component: LeaderboardsComponent },
 ];
 
 @NgModule({

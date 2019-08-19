@@ -1,0 +1,44 @@
+<div *ngIf="!selectedRank" class="mt-sm" fxLayout="row wrap" fxLayoutAlign="center start">
+  <div *ngFor="let rank of ranks">
+    <button class="p-0 m-0" mat-button (click)="selectRank(rank)">
+      <div class="rank-tile m-xs p-xs" fxLayout="column" fxLayoutAlign="center center" [style.color]="getColor(rank.name)">
+        <img src = "{{ rank.picture }}" class="rank-picture"  alt="Picture of a {{ rank?.name }} chess peice" title="{{ rank?.name }} rank picture"/>
+        <h1>{{ rank.name }}</h1>
+      </div>
+    </button>
+  </div>
+</div>
+<div class="rank-outter w-100" fxLayout="column" fxLayoutAlign="center center" *ngIf="selectedRank">
+  <div class="rank-perks w-100" fxLayout="column" fxLayout.gt-xs="row" fxLayoutAlign="center center">
+    <div fxHide.lt-md fxFlex="100" fxFlex.gt-sm="33" fxLayout="column" fxLayoutAlign="center center">
+      <div class="rank-tile p-xs" fxLayout="column" fxLayoutAlign="center center" [style.color]="getColor(selectedRank?.name)">
+        <img class="rank-picture" src="{{ selectedRank?.picture }}" alt="Picture of a {{ selectedRank?.name }} chess peice" title="{{ selectedRank?.name }} rank picture"/>
+        <h1>{{ selectedRank?.name }}</h1>
+      </div>
+    </div>
+    <div fxFlex="50" fxFlex.gt-sm="33" fxLayout="column" fxLayoutAlign="center center">
+      <div class="kit p-xs" fxLayout="column" fxLayoutAlign="center center" [style.color]="getColor(selectedRank?.name)">
+        <h1 class="m-0 p-0 mb-sm">{{ selectedRank?.name }} Kit</h1>
+        <img class="rank-kit-picture" src="{{ selectedRank?.kit_picture }}"  alt="Picture of the {{ selectedRank?.name }} in-game kit" title="{{ selectedRank?.name }} rank kit picture"/>
+      </div>
+    </div>
+    <div  fxFlex="50" fxFlex.gt-sm="33" fxLayout="column" fxLayoutAlign="center center">
+      <div class="permissions" fxLayout="column" fxLayoutAlign="center center">
+          <h2 class="mb-0" [style.color]="getColor(selectedRank?.name)">Abilities</h2>
+        <ul>
+          <li class="m-0" *ngFor="let ability of selectedRank?.abilities">
+            <p class="m-xs">{{ ability }}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <button mat-button>
+    <a href="https://topblockmc.enjin.com/" rel="noopener noreferrer" target="_blank">
+      <img class="donate-picture" src="http://topblockmc.net/Pictures/Buttons/paypaldonate.png">
+    </a>
+  </button>
+  <div class="buttons">
+    <button class="back-button" mat-button (click)="reset()">Go back</button>
+  </div>
+</div>

@@ -8,16 +8,14 @@ import { LeaderboardComponent } from './components/leaderboard/leaderboard.compo
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { NewsboxComponent } from './components/newsbox/newsbox.component';
-import { HomeComponent } from './pages/home/home.component';
-import { RanksComponent } from './pages/ranks/ranks.component';
-import { RankTileComponent } from './components/rank-tile/rank-tile.component';
-import { RankPageComponent } from './components/rank-page/rank-page.component';
-import { DiscordComponent } from './pages/discord/discord.component';
 import { LeaderboardsComponent } from './pages/leaderboards/leaderboards.component';
-import { VotinglinksComponent } from './pages/votinglinks/votinglinks.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule, MatSidenavModule, MatListModule, MatButtonModule, MatIconModule } from "@angular/material";
+import { RanksComponent } from './components/ranks/ranks.component';
+import { HomeComponent } from './components/home/home.component';
+import { VotingLinksComponent } from './components/voting-links/voting-links.component';
+import { DiscordComponent } from './components/discord/discord.component';
 
 @NgModule({
   declarations: [
@@ -27,13 +25,11 @@ import { MatToolbarModule, MatSidenavModule, MatListModule, MatButtonModule, Mat
     HeaderComponent,
     NavComponent,
     NewsboxComponent,
-    HomeComponent,
-    RanksComponent,
-    RankTileComponent,
-    RankPageComponent,
-    DiscordComponent,
     LeaderboardsComponent,
-    VotinglinksComponent,
+    RanksComponent,
+    HomeComponent,
+    VotingLinksComponent,
+    DiscordComponent,
   ],
   imports: [
     BrowserModule,
