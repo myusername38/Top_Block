@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { RanksService } from 'src/app/services/ranks.service';
 import { Rank } from 'src/app/rank';
 import { Router, NavigationEnd } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-ranks',
@@ -12,9 +13,14 @@ export class RanksComponent implements OnInit, OnDestroy {
 
   ranks: Rank[] = [];
   selectedRank: Rank = null;
-  navigationSubscription = null;
+  navigationSubscription: Subscription = null;
 
   constructor(private rankService: RanksService,  private router: Router ) {
+    this.navigationSubscription = this.router.events.subscribe((e: any) => {
+      if (e instanceof NavigationEnd) {
+        this.reset();
+      }
+    });
     this.rankService.getRanks().subscribe(data => this.ranks = data);
   }
 
@@ -22,9 +28,7 @@ export class RanksComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    if (this.navigationSubscription) {
-      this.navigationSubscription.unsubscribe();
-    }
+    this.navigationSubscription.unsubscribe();
   }
 
   selectRank(rank: Rank) {

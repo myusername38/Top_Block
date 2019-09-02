@@ -1,14 +1,14 @@
-<div *ngIf="!selectedRank" class="mt-sm" fxLayout="row wrap" fxLayoutAlign="center start">
+<div *ngIf="!selectedRank" class="mt-sm fade-in-fast" fxLayout="row wrap" fxLayoutAlign="center start">
   <div *ngFor="let rank of ranks">
     <button class="p-0 m-0" mat-button (click)="selectRank(rank)">
       <div class="rank-tile m-xs p-xs" fxLayout="column" fxLayoutAlign="center center" [style.color]="getColor(rank.name)">
-        <img src = "{{ rank.picture }}" class="rank-picture"  alt="Picture of a {{ rank?.name }} chess peice" title="{{ rank?.name }} rank picture"/>
+        <img src="{{ rank.picture }}" class="rank-picture" alt="Picture of a {{ rank?.name }} chess peice" title="{{ rank?.name }} rank picture"/>
         <h1>{{ rank.name }}</h1>
       </div>
     </button>
   </div>
 </div>
-<div class="rank-outter w-100" fxLayout="column" fxLayoutAlign="center center" *ngIf="selectedRank">
+<div class="rank-outter w-100 p-xs fade-in-fast" fxLayout="column" fxLayoutAlign="center center" *ngIf="selectedRank">
   <div class="rank-perks w-100" fxLayout="column" fxLayout.gt-xs="row" fxLayoutAlign="center center">
     <div fxHide.lt-md fxFlex="100" fxFlex.gt-sm="33" fxLayout="column" fxLayoutAlign="center center">
       <div class="rank-tile p-xs" fxLayout="column" fxLayoutAlign="center center" [style.color]="getColor(selectedRank?.name)">

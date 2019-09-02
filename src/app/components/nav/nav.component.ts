@@ -36,6 +36,10 @@ export class NavComponent implements OnInit {
         this.activePage = page;
         this.router.navigate(['/ranks']);
         break;
+      case 'Crates':
+        this.activePage = page;
+        this.router.navigate(['/crates']);
+        break;
       case 'Discord':
         this.activePage = page;
         this.router.navigate(['/discord']);

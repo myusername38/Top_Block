@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlayerBlockComponent } from './components/player-block/player-block.component';
@@ -8,14 +8,14 @@ import { LeaderboardComponent } from './components/leaderboard/leaderboard.compo
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { NewsboxComponent } from './components/newsbox/newsbox.component';
-import { LeaderboardsComponent } from './pages/leaderboards/leaderboards.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatToolbarModule, MatSidenavModule, MatListModule, MatButtonModule, MatIconModule } from "@angular/material";
+import { MatToolbarModule, MatSidenavModule, MatListModule, MatButtonModule, MatIconModule } from '@angular/material';
 import { RanksComponent } from './components/ranks/ranks.component';
 import { HomeComponent } from './components/home/home.component';
 import { VotingLinksComponent } from './components/voting-links/voting-links.component';
 import { DiscordComponent } from './components/discord/discord.component';
+import { CratesComponent } from './components/crates/crates.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +25,11 @@ import { DiscordComponent } from './components/discord/discord.component';
     HeaderComponent,
     NavComponent,
     NewsboxComponent,
-    LeaderboardsComponent,
     RanksComponent,
     HomeComponent,
     VotingLinksComponent,
     DiscordComponent,
+    CratesComponent,
   ],
   imports: [
     BrowserModule,

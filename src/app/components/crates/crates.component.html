@@ -1,0 +1,29 @@
+<div class="crates w-100 p-sm fade-in-fast" fxLayout="row wrap" fxLayoutAlign="center center" *ngIf="!selectedCrate">
+  <div *ngFor="let crate of crates" class="mb-sm">
+    <button mat-button (click)="selectCrate(crate)">
+      <div class="crate-tile p-xs" fxLayout="column" fxLayoutAlign="center center" [style.color]="getColor(crate?.name)">
+        <img src="{{ crate?.image }}"/>
+        <h2 class="mb-0 mt-xs">{{ crate?.name }}</h2>
+      </div>
+    </button>
+  </div>
+</div>
+<div class="expanded-crate mt-sm w-100" fxLayout="row wrap" fxLayoutAlign="start center" *ngIf="selectedCrate">
+  <div fxFlex="50" fxLayoutAlign="center center">
+    <div class="crate-tile p-xs" fxLayout="column" fxLayoutAlign="center center" [style.color]="getColor(selectedCrate?.name)">
+      <img src="{{ selectedCrate?.image }}"/>
+      <h2 class="mb-0 mt-xs">{{ selectedCrate?.name }}</h2>
+    </div>
+  </div>
+  <div class="crate-contents" fxFlex="50">
+    <div class="contents" fxLayout="column" fxLayoutAlign="center center">
+        <h2 class="mb-0" [style.color]="getColor(selectedCrate?.name)">Abilities</h2>
+      <ul>
+        <li class="m-0" *ngFor="let item of selectedCrate.contents">
+          <p class="m-xs">{{ item }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+

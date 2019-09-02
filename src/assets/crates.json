@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Basic Crate",
+    "picture": "http://topblockmc.net/Pictures/Icons/Basic.jpg",
+    "contents" : [
+      "64 bottles O enchanting",
+      "64 bottles O enchanting",
+      "64 bottles O enchanting",
+      "64 bottles O enchanting",
+      "64 bottles O enchanting"
+    ]
+  },
+  {
+    "name": "Spawner",
+    "picture": "http://topblockmc.net/Pictures/Icons/Spawner.jpg",
+    "contents" : [
+      "64 bottles O enchanting",
+      "64 bottles O enchanting",
+      "64 bottles O enchanting",
+      "64 bottles O enchanting",
+      "64 bottles O enchanting"
+    ]
+  },
+  {
+    "name": "God Crate",
+    "picture": "http://topblockmc.net/Pictures/Icons/God.jpg",
+    "contents" : [
+      "64 bottles O enchanting",
+      "64 bottles O enchanting",
+      "64 bottles O enchanting",
+      "64 bottles O enchanting",
+      "64 bottles O enchanting"
+    ]
+  }
+]
