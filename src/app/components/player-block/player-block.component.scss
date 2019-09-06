@@ -1,0 +1,19 @@
+div {
+    border-style: solid;
+    border-color: solid;  
+    border-radius: 15px; 
+    display: flex;
+    flex-direction: row; 
+    margin: 2px; 
+
+    img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    }
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left:35px; 
+        color: white; 
+    }
+    
+}
