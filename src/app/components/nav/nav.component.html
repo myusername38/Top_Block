@@ -1,25 +1,24 @@
 <div class="outter">
   <div class="links">
     <div fxLayout="row" fxLayoutAlign="center center">
-      <button mat-button (click)="setActivePage('Home')">Home</button>
-      <button mat-button (click)="setActivePage('Ranks')">Ranks</button>
-      <button mat-button (click)="setActivePage('Crates')">Crates</button>
-      <button mat-button (click)="setActivePage('Discord')">Discord</button>
-      <button mat-button (click)="setActivePage('VotingLinks')">Voting Links</button>
-      <a href="http://donation.topblockmc.net/" rel="noopener noreferrer" target="_blank"><button mat-button>Store</button></a>
+      <button aria-label="navigate to home page" mat-button (click)="setActivePage('Home')">Home</button>
+      <button aria-label="navigate to ranks page" mat-button (click)="setActivePage('Ranks')">Ranks</button>
+      <button aria-label="navigate to crates page" mat-button (click)="setActivePage('Crates')">Crates</button>
+      <button aria-label="navigate to discord page" mat-button (click)="setActivePage('Discord')">Discord</button>
+      <button aria-label="navigate to voting links page" mat-button (click)="setActivePage('VotingLinks')">Voting Links</button>
+      <a href="https://topblockmc.buycraft.net" rel="noopener noreferrer" target="_blank"><button aria-label="navigate to online store" mat-button>Store</button></a>
     </div>
   </div>
   <div class="mobile-links">
-      <button mat-button (click)="toggleMobileMenu()"><mat-icon >menu</mat-icon></button>
+      <button aria-label="open mobile menu" mat-button (click)="toggleMobileMenu()"><mat-icon >menu</mat-icon></button>
   </div>
   <div class="mobile-menu w-100 fade-in-fast" fxLayout="column"  *ngIf="mobileMenu">
-    <button class="m-xs" mat-button (click)="setActivePage('Home')">Home</button>
-    <button class="m-xs mt-0" mat-button (click)="setActivePage('Ranks')" >Ranks</button>
-    <button class="m-xs mt-0" mat-button (click)="setActivePage('Crates')">Crates</button>
-    <button class="m-xs mt-0" mat-button (click)="setActivePage('Discord')" >Discord</button>
-    <button class="m-xs mt-0" mat-button (click)="setActivePage('VotingLinks')">Voting Links</button>
-    <a href="http://donation.topblockmc.net/" rel="noopener noreferrer" target="_blank"><button mat-button class="m-xs mt-0 w-100" >Store</button></a>
-    <!--<button class="m-xs" mat-button (click)="setActivePage('LeaderBoards')" >Leader Boards</button>-->
-    <button class="m-xs mt-0" mat-button (click)="toggleMobileMenu()">Close</button>
+    <button aria-label="navigate to home page" class="m-xs" mat-button (click)="setActivePage('Home')">Home</button>
+    <button aria-label="navigate to ranks page" class="m-xs mt-0" mat-button (click)="setActivePage('Ranks')" >Ranks</button>
+    <button aria-label="navigate to crates page" class="m-xs mt-0" mat-button (click)="setActivePage('Crates')">Crates</button>
+    <button aria-label="navigate to discord page" class="m-xs mt-0" mat-button (click)="setActivePage('Discord')" >Discord</button>
+    <button aria-label="navigate to voting page" class="m-xs mt-0" mat-button (click)="setActivePage('VotingLinks')">Voting Links</button>
+    <a href="https://topblockmc.buycraft.net" rel="noopener noreferrer" target="_blank"><button aria-label="navigate to online store" mat-button class="m-xs mt-0 w-100" >Store</button></a>
+    <button aria-label="close mobile menu" class="m-xs mt-0" mat-button (click)="toggleMobileMenu()">Close</button>
   </div>
 </div>

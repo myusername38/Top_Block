@@ -1,29 +1,38 @@
-<div class="crates w-100 p-sm fade-in-fast" fxLayout="row wrap" fxLayoutAlign="center center" *ngIf="!selectedCrate">
+<div class="crates w-100 p-sm fade-in-fast" fxLayout="column" fxLayout.gt-xs="row wrap" fxLayoutAlign="center center" *ngIf="!selectedCrate">
   <div *ngFor="let crate of crates" class="mb-sm">
     <button mat-button (click)="selectCrate(crate)">
       <div class="crate-tile p-xs" fxLayout="column" fxLayoutAlign="center center" [style.color]="getColor(crate?.name)">
-        <img src="{{ crate?.image }}"/>
+        <img src="{{ crate?.picture }}" title="{{ crate?.name }} picture" alt="{{ crate?.name }} rank icon"/>
         <h2 class="mb-0 mt-xs">{{ crate?.name }}</h2>
       </div>
     </button>
   </div>
 </div>
-<div class="expanded-crate mt-sm w-100" fxLayout="row wrap" fxLayoutAlign="start center" *ngIf="selectedCrate">
-  <div fxFlex="50" fxLayoutAlign="center center">
-    <div class="crate-tile p-xs" fxLayout="column" fxLayoutAlign="center center" [style.color]="getColor(selectedCrate?.name)">
-      <img src="{{ selectedCrate?.image }}"/>
+<div class="expanded-crate mt-sm w-100" fxLayout="column" fxLayout.gt-xs="row wrap" fxLayoutAlign="center center" *ngIf="selectedCrate">
+  <div fxLayoutAlign="center center" fxFlex="40">
+    <div class="crate-tile p-xs" fxLayout="column" fxLayoutAlign="start center" [style.color]="getColor(selectedCrate?.name)">
+      <img title="{{ selectedCrate?.name }} picture" alt="{{ selectedCrate?.name }} rank icon" src="{{ selectedCrate?.picture }}"/>
       <h2 class="mb-0 mt-xs">{{ selectedCrate?.name }}</h2>
     </div>
   </div>
-  <div class="crate-contents" fxFlex="50">
-    <div class="contents" fxLayout="column" fxLayoutAlign="center center">
-        <h2 class="mb-0" [style.color]="getColor(selectedCrate?.name)">Abilities</h2>
-      <ul>
+  <div class="crate-contents" fxFlex="40" fxLayoutAlign="center center">
+    <div class="contents p-sm" fxLayout="column" fxLayoutAlign="center center">
+        <h2 class="mb-0" [style.color]="getColor(selectedCrate?.name)">Contents</h2>
+      <ul class="pl-sm">
         <li class="m-0" *ngFor="let item of selectedCrate.contents">
           <p class="m-xs">{{ item }}</p>
         </li>
       </ul>
     </div>
+  </div>
+  <div fxLayout="column" fxLayoutAlign="center center" class="mt-sm">
+  <button aria-label="go to topblockmc store" mat-button>
+    <a href="https://topblockmc.buycraft.net" rel="noopener noreferrer" target="_blank">
+      <img title="dontate" alt="donate to topblockmc" class="donate-picture" src="http://topblockmc.net/Pictures/Buttons/paypaldonate.png">
+    </a>
+  </button>
+  <div class="buttons">
+    <button class="back-button" aria-label="go back to crate list" mat-button (click)="reset()">Go back</button>
   </div>
 </div>
 

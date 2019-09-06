@@ -33,12 +33,14 @@
       </div>
     </div>
   </div>
-  <button mat-button>
-    <a href="https://topblockmc.enjin.com/" rel="noopener noreferrer" target="_blank">
-      <img class="donate-picture" src="http://topblockmc.net/Pictures/Buttons/paypaldonate.png">
-    </a>
-  </button>
-  <div class="buttons">
-    <button class="back-button" mat-button (click)="reset()">Go back</button>
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <button mat-button>
+      <a href="https://topblockmc.buycraft.net" rel="noopener noreferrer" target="_blank">
+        <img class="donate-picture" title="dontate" alt="donate to topblockmc" class="donate-picture" src="http://topblockmc.net/Pictures/Buttons/paypaldonate.png">
+      </a>
+    </button>
+    <div class="buttons">
+      <button class="back-button" mat-button (click)="reset()">Go back</button>
+    </div>
   </div>
 </div>

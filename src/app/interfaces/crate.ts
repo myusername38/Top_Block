@@ -1,5 +1,5 @@
 export interface Crate {
   name: string;
-  image: string;
+  picture: string;
   contents: string[];
 }
