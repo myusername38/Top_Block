@@ -14,20 +14,10 @@ export class NavComponent implements OnInit {
 
   constructor( private router: Router ) { }
 
-  ngOnInit() {
-   console.log(this.activePage);
-
-   const apples = -1;
-   if (apples) {
-
-   }
-  }
-  buttonClicked(){
-    console.log('click');
-  }
-  setActivePage(page: string){
+  ngOnInit() { }
+  setActivePage(page: string) {
     this.mobileMenu = null;
-    switch(page){
+    switch (page) {
       case 'Home':
         this.activePage = page;
         this.router.navigate(['/']);
@@ -57,8 +47,8 @@ export class NavComponent implements OnInit {
         this.router.navigate(['/']);
     }
   }
-  toggleMobileMenu(){
-    if(!this.mobileMenu){
+  toggleMobileMenu() {
+    if (!this.mobileMenu) {
       this.mobileMenu = true;
       return;
     }

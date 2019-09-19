@@ -11,23 +11,19 @@ import { Post } from 'src/app/post';
 export class NewsboxComponent implements OnInit {
 
   @Input()
-    post: Post; 
+    post: Post;
 
     name: string;
-    title: string; 
-    uuid: string; 
-    date: string; 
+    title: string;
+    uuid: string;
+    date: string;
     news: string;
 
   ngOnInit() {
-
-    this.name = this.post.name; 
-    this.title = this.post.title; 
-    this.uuid = this.post.uuid; 
-    this.date = this.post.date; 
+    this.name = this.post.name;
+    this.title = this.post.title;
+    this.uuid = this.post.uuid;
+    this.date = this.post.date;
     this.news = this.post.news;
-    
- 
   }
-
 }

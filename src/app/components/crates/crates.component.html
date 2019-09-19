@@ -17,7 +17,7 @@
   </div>
   <div class="crate-contents" fxFlex="40" fxLayoutAlign="center center">
     <div class="contents p-sm" fxLayout="column" fxLayoutAlign="center center">
-        <h2 class="mb-0" [style.color]="getColor(selectedCrate?.name)">Contents</h2>
+      <h2 class="mb-0" [style.color]="getColor(selectedCrate?.name)">Contents</h2>
       <ul class="pl-sm">
         <li class="m-0" *ngFor="let item of selectedCrate.contents">
           <p class="m-xs">{{ item }}</p>
