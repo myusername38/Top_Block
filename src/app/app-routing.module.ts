@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'crates', component: CratesComponent,  runGuardsAndResolvers: 'always' },
   { path: 'discord', component: DiscordComponent },
   { path: 'votinglinks', component: VotingLinksComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

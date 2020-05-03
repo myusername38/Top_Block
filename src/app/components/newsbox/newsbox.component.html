@@ -5,8 +5,8 @@
   </div>
   <h2 class="m-0 mb-xs">{{ title }}</h2>
   <h3 class="m-0 mb-xs">Date: {{ date }}</h3>
-  <div class="news-text w-100 transparent-box-light p-xs">
-    <p>{{ news }}</p>
+  <div  class="news-text w-100 transparent-box-light p-xs">
+    <p [innerHTML]="checkPost(news)">{{ news }}/p>
   </div>
 </div>
 
